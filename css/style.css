@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: aqua;
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+/* 
+ */
+
+ 
+ .slider-wrapper {
+    height: 60vh;
+    margin: 50px 0 10px;
+    overflow: hidden;
+  }
+  
+  .slider-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slider-wrapper {
+    position: relative;
+  }
+  .slider-item {
+    position: inherit;
+    display: none;
+    transition: all 0.3s;
+  }
+  .slider-item.active {
+    display: block;
+    height: 100%;
+    position: relative;
+    /* opacity: 0; */
+  }
+  .slider-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    width: 70%;
+    color: white;
+  }
+  .slider-section {
+    position: relative;
+  }
+  .pagination,
+  .auto-sliding,
+  .pagination-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .pagination {
+    margin: 0;
+  }
+  .pagination .btn {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    transition: all 0.3s;
+  }
+  .pagination .btn#next {
+    right: 20px;
+    left: unset;
+  }
+  .pagination .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .pagination-btns {
+    justify-content: space-between;
+  }
+  .auto-sliding .btn {
+    margin: 0 10px;
+  }
+  
+  .circles {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+  }
+  .circle {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .circle:last-child {
+    margin-right: 0;
+  }
+  .grey {
+    background-color: grey;
+  }
