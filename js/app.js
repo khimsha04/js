@@ -7,10 +7,10 @@ function displayTime() {
 
 // console.log(displayTime);
 if (hrs >= 12) {
-    session.innerHtml = 'PM';
+    session.innerHtml = 'AM';
 }
 else {
-    session.innerHtml = 'AM';
+    session.innerHtml = 'PM';
 }
 document.querySelector('#hours').innerHTML = hrs;
 document.querySelector('#minutes').innerHTML = min;
